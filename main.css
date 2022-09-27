@@ -1,0 +1,48 @@
+body {
+    font-size: 16px;
+    max-width: 90vw;
+    margin: auto;
+    background-color: rgb(28, 79, 46);
+}
+
+img {
+    border-radius: 20px;
+    max-width: 60vw;
+    height: auto;
+
+}
+
+.link {
+    color: rgb(4, 4, 206);
+    font-size: 20;
+}
+
+.green {
+    color: red;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.main {
+    background-color: rgb(31, 133, 133);
+    color: rgb(37, 36, 36);
+}
+
+.Jess {
+    border-radius: 20px;
+    max-width: 15vw;
+    height: auto;
+}
+
+.upper {
+    font-size: 26px;
+}
+
+.lower {
+    font-size: 18px;
+}
+
+.mainbod {
+    color: rgb(24, 135, 166);
+    font-size: 30px;
+}
