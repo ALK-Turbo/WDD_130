@@ -1,16 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    max-width: 1080px;
+    margin: auto;
+}
+
+p {
+    max-width: 70ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+    font-family: 'Rock Salt', Impact;
+}
+
+.banner img {
+    width: 100%;
 
 }
 
-.largephoto {
-    border-radius: 20px;
-    max-width: 60vw;
-    height: auto;
+.mission h2 {
+    text-align: center;
 }
 
-.smallphoto {
-    border-radius: 20px;
-    max-width: 60vw;
-    height: auto;
+.mission p {
+    margin: auto;
 }
