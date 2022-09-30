@@ -1,11 +1,53 @@
 body {
     color: black;
-    font: 20px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     max-width: 600px;
+    margin: auto;
+    border: solid black 1px;
+    padding: 3em 6em;
+}
+
+h1 {
+    width: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 0;
 }
 
 h2 {
     color: #006EB6;
-    border-bottom: solid 1px black;
+    border-bottom: solid 0.5px black;
+    font-size: 15px;
+    letter-spacing: 5px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: .2em;
+}
+
+div {
+    font-style: italic;
+    width: auto;
+    text-align: left;
+}
+
+img {
+    max-width: 150px;
+}
+
+footer {
+    width: 150px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: decimal;
+    word-break: normal;
+    white-space: wrap;
+    margin-bottom: 2em;
+}
+
+ul li {
+    padding: 10px;
 }
