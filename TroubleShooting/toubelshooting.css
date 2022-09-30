@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+/* * {
+    border: 1px solid;
+} */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     max-width: 1080px;
     margin: auto;
+
 }
 
 p {
@@ -27,8 +32,16 @@ h5 {
 
 .mission h2 {
     text-align: center;
+    margin: 0;
+
 }
 
 .mission p {
     margin: auto;
+}
+
+.mission {
+    background-color: rgb(21, 119, 70);
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: 1.5em 0;
 }
