@@ -3,9 +3,14 @@ body {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     max-width: 600px;
-    margin: auto;
+    margin: 2em auto;
     border: solid black 1px;
     padding: 3em 6em;
+}
+
+header {
+    line-height: 1.5;
+    text-transform: capitalize;
 }
 
 h1 {
