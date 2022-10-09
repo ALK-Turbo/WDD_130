@@ -56,3 +56,21 @@ ul {
 ul li {
     padding: 10px;
 }
+
+
+/* Black */
+.button2 {
+
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.button1 {
+
+    background-color: #f7f7fa;
+    color: rgb(6, 6, 6);
+    border: none;
+    border-radius: 10px;
+}
