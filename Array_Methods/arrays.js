@@ -57,3 +57,17 @@ function sumPoints(total, current) {
 }
 const averageGPA = gpaPoints.reduce(sumPoints, 0) / gpaPoints.length
 console.log(averageGPA.toFixed(2))
+//try this one again, it is jjust like the one above, just in one line instead of several
+// const averageGPA2 = gpaPoints((total, current) => total + current, 0);
+// console.log(averageGPA2)
+
+
+const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+const result = fruits.filter(fruit => fruit.length < 6);
+console.log(result);
+
+const fruits2 = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+const shortWords = fruits2.filter(function (word) {
+    return word.length < 6;
+});
+console.log(shortWords);
