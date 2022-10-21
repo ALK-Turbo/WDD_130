@@ -9,12 +9,40 @@
             list-style-type: none;
         }
 
-        .meal-card {}
+        .meal-card {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            border: 1px solid black;
+            padding: 1em;
+        }
+
+        .meal-card img {
+            grid-row: 1/4;
+            width: 75%;
+        }
+
+        .meal-card>* {
+            margin: 0;
+        }
+
+        .meal-card h2 {
+            grid-row: 1/2;
+            grid-column: 2/4;
+
+
+        }
+
+        .meal-card p {
+            margin: 0;
+        }
+
+        .meal-category {
+            grid-column: 2/4;
+        }
     </style>
 </head>
 
 <body>
-    <img alt="curry" src="../Images/Curry.jpg">
     <ul id="myList"></ul>
 </body>
 <main>

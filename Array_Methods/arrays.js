@@ -77,13 +77,13 @@ const lucky_number = 21
 console.log(numbers.indexOf(lucky_number))
 
 const meals = [
-    { name: "curry", category: "Indian", prepTime: "20min", cookTime: "20min", url: "dom-events.html", imgSrc: "./Web Development/Curry.jpg" },
-    { name: "Tacos", category: "Mexican", prepTime: "10min", cookTime: "10min", url: "dom-events.html", imgSrc: "./Web Development/Tacos.jpg" },
+    { name: "Curry", category: "Indian", prepTime: "20min", cookTime: "20min", url: "dom-events.html", imgSrc: "../Images/Curry.jpg" },
+    { name: "Tacos", category: "Mexican", prepTime: "10min", cookTime: "10min", url: "dom-events.html", imgSrc: "../Images/Tacos.jpg" },
     { name: "Alfredo", category: "Italian", prepTime: "10min", cookTime: "25min", url: "dom-events.html", imgSrc: "../Images/Alfredo.jpg" }
 ]
 
 function mealTemplate(meal) {
-    return `<li class = "meal-card"><img src=""><h2>${meal.name}</h2><p>${meal.category}
+    return `<li class = "meal-card"><img src="${meal.imgSrc}"><h2>${meal.name}</h2><p class = "meal-category">${meal.category}
     </p><p>PrepTime: ${meal.prepTime}</p><p>CookTime: ${meal.cookTime}</p>`
 }
 function renderMeals() {
