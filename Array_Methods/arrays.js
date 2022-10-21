@@ -75,3 +75,24 @@ console.log(shortWords);
 const numbers = [12, 34, 21, 54]
 const lucky_number = 21
 console.log(numbers.indexOf(lucky_number))
+
+const meals = [
+    { name: "curry", category: "Indian", prepTime: "20min", cookTime: "20min", url: "dom-events.html", imgSrc: "./Web Development/Curry.jpg" },
+    { name: "Tacos", category: "Mexican", prepTime: "10min", cookTime: "10min", url: "dom-events.html", imgSrc: "./Web Development/Tacos.jpg" },
+    { name: "Alfredo", category: "Italian", prepTime: "10min", cookTime: "25min", url: "dom-events.html", imgSrc: "../Images/Alfredo.jpg" }
+]
+
+function mealTemplate(meal) {
+    return `<li class = "meal-card"><img src=""><h2>${meal.name}</h2><p>${meal.category}
+    </p><p>PrepTime: ${meal.prepTime}</p><p>CookTime: ${meal.cookTime}</p>`
+}
+function renderMeals() {
+    const htmlMeals = meals.map(mealTemplate);
+    const newUl = document.createElement('ul');
+    newUl.classList.add("meal-list");
+    newUl.insertAdjacentHTML(("afterbegin"),
+        htmlMeals.join(''));
+    document.querySelector('main').insertAdjacentElement('beforeend', newUl)
+}
+
+renderMeals();
