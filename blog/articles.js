@@ -12,7 +12,7 @@ const articles = [
     stars: "****"
   },
   {
-    id: 2,
+    id: "second",
     title: "Magnus Chase Book One: Sword of Summer",
     date: "December 12, 2021",
     description:
@@ -27,36 +27,30 @@ const articles = [
 ];
 
 function articlesTemplates(articles) {
-  return `
-  <li class = "articles-card">
+  return `<li class = "articles-card"><section class="${articles.id}">
+  <article class="data"><p>${articles.date}</p><p>${articles.ages}</p>
+  <p>${articles.genre}</p><p>${articles.stars}</p>
+  </article>
+  <body>
+  <section class="book">
+  <h2>${articles.title}</h2>
+  <div>
+  <img src="${articles.imgSrc}"
+  alt="${articles.imgAlt}">
+  </div>
+  <br>${articles.description}
+  </section>
+  </body>
   
-  <section class="${articles.id}">
-        <article class="data">
-            <p>${articles.date}</p>
-            <p>${articles.ages} </p>
-            <p>${articles.genre}</p>
-            <p>${articles.stars}</p>
-        </article>
-
-        <body>
-            <section class="book">
-                <h2>${articles.title}</h2>
-                <div>
-                    <img src="${articles.imgSrc}"
-                        alt="${articles.imgAlt}">
-                </div>
-                <br>${articles.description}
-            </section>
-        </body>
   </section>
   `
 }
 
 function renderArticles() {
-  const htmlArticles = articles.map(renderArticles);
-  const newSection = document.createElement('ul');
-  newSection.classList.add("articles-list");
-  newSection.insertAdjacentHTML(("afterbegin"),
+  const htmlArticles = articles.map(articlesTemplates);
+  const newUl = document.createElement('ul');
+  newUl.classList.add("articles-list");
+  newUl.insertAdjacentHTML(("afterbegin"),
     htmlArticles.join(''));
   document.querySelector('main').insertAdjacentElement('beforeend', newUl);
 }
