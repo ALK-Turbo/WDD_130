@@ -1,6 +1,6 @@
 const articles = [
   {
-    id: 1,
+    id: "first",
     title: "Septimus Heap Book One: Magyk",
     date: "July 5, 2022",
     description:
@@ -25,3 +25,40 @@ const articles = [
     stars: "⭐⭐⭐⭐"
   }
 ];
+
+function articlesTemplates(articles) {
+  return `
+  <li class = "articles-card">
+  
+  <section class="${articles.id}">
+        <article class="data">
+            <p>${articles.date}</p>
+            <p>${articles.ages} </p>
+            <p>${articles.genre}</p>
+            <p>${articles.stars}</p>
+        </article>
+
+        <body>
+            <section class="book">
+                <h2>${articles.title}</h2>
+                <div>
+                    <img src="${articles.imgSrc}"
+                        alt="${articles.imgAlt}">
+                </div>
+                <br>${articles.description}
+            </section>
+        </body>
+  </section>
+  `
+}
+
+function renderArticles() {
+  const htmlArticles = articles.map(renderArticles);
+  const newSection = document.createElement('ul');
+  newSection.classList.add("articles-list");
+  newSection.insertAdjacentHTML(("afterbegin"),
+    htmlArticles.join(''));
+  document.querySelector('main').insertAdjacentElement('beforeend', newUl);
+}
+
+renderArticles();
