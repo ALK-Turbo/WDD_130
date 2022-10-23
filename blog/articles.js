@@ -24,6 +24,7 @@ const articles = [
     genre: "Fantasy",
     stars: "⭐⭐⭐⭐"
   }
+
 ];
 
 function articlesTemplates(articles) {

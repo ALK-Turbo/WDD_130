@@ -80,6 +80,12 @@ nav ul li {
     grid-template-rows: auto;
 }
 
+.third {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+}
+
 .book {
     width: auto;
     text-align: center;
