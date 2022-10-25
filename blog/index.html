@@ -29,7 +29,36 @@
     </header>
     <section class="selectors">
 
-        Filters will go here
+        <p>Filters will go here</p>
+        <form id="filters" method="get">
+            <fieldset class="fieldset">
+                <legend>Login</legend>
+                <p>
+                    <label for="username" id="username" required>Username</label>
+                    <input type="text" name="username" required />
+                </p>
+                <p>
+                    <label for="password" id="password" minlength="8">Password</label>
+                    <input type="password" name="password" minlength="8" />
+                </p>
+                <input type="hidden" name="userid" value="1234" />
+            </fieldset>
+            <p>
+                <label for="sort">Sort</label>
+                <select id="sort">
+                    <option>Pick A Value</option>
+                    <option value="asc">Ascending</option>
+                    <option value="dsc">Descending</option>
+                </select>
+
+            </p>
+            <p>
+                <label for="tags">Tags</label>
+                <input type="checkbox" name="tags" id="tags">
+
+            </p>
+            <button type="submit">Submit</button>
+        </form>
 
     </section>
 

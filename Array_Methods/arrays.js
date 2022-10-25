@@ -83,7 +83,8 @@ const meals = [
 ]
 
 function mealTemplate(meal) {
-    return `<li class = "meal-card"><img src="${meal.imgSrc}"><h2>${meal.name}</h2><p class = "meal-category">${meal.category}
+    return `<li class = "meal-card"><img src="${meal.imgSrc}">
+    <h2>${meal.name}</h2><p class = "meal-category">${meal.category}
     </p><p>PrepTime: ${meal.prepTime}</p><p>CookTime: ${meal.cookTime}</p>`
 }
 function renderMeals() {

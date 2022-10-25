@@ -1,6 +1,6 @@
 const articles = [
   {
-    id: "first",
+    id: 1,
     title: "Septimus Heap Book One: Magyk",
     date: "July 5, 2022",
     description:
@@ -12,7 +12,7 @@ const articles = [
     stars: "****"
   },
   {
-    id: "second",
+    id: 2,
     title: "Magnus Chase Book One: Sword of Summer",
     date: "December 12, 2021",
     description:
@@ -23,12 +23,25 @@ const articles = [
     ages: "12-16",
     genre: "Fantasy",
     stars: "⭐⭐⭐⭐"
+  },
+  {
+    id: 3,
+    title: "Belgariad Book One: Pawn of Prophecy",
+    date: "Feb 12, 2022",
+    description:
+      "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+    imgSrc:
+      "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+    imgAlt: "Book cover for Pawn of Prophecy",
+    ages: "12-16",
+    genre: "Fantasy",
+    stars: "⭐⭐⭐⭐⭐"
   }
 
-];
+]
 
 function articlesTemplates(articles) {
-  return `<li class = "articles-card"><section class="${articles.id}">
+  return `<li class = "articles-card"><section class="next">
   <article class="data"><p>${articles.date}</p><p>${articles.ages}</p>
   <p>${articles.genre}</p><p>${articles.stars}</p>
   </article>

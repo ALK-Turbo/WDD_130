@@ -19,7 +19,7 @@ header {
 
     display: grid;
     grid-column: 1/10;
-    grid-row: 1;
+    grid-row: 1/2;
 }
 
 h1 {
@@ -54,7 +54,7 @@ nav ul li {
 .selectors {
     width: auto;
     grid-column: 1/3;
-    grid-row: 2/span 2;
+    grid-row: 2/span auto;
     padding: 0.5em;
     text-align: left;
     border: 1px solid var(--border);
@@ -64,23 +64,9 @@ nav ul li {
 .articles-list {
     width: auto;
     grid-column: 3/8;
-
 }
 
-
-.first {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
-}
-
-.second {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
-}
-
-.third {
+.next {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
