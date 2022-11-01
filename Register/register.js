@@ -1,0 +1,2 @@
+numParticipants = 0;
+
