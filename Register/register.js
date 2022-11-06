@@ -59,6 +59,7 @@ btn.addEventListener('click', function onClick(event) {
 function submitForm(event) {
     event.preventDefault();
     // do the rest of the stuff
+    console.log("Form Submitted")
 };
 
 function totalFees() {
@@ -70,26 +71,35 @@ function totalFees() {
     // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
     feeElements = [...feeElements];
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
-    sum = Array.reduce(feeElements);
+    let sum = feeElements.reduce(function (previousValue, currentValue) {
+        return previousValue + currentValue;
+    });
     // once you have your total make sure to return it!
     console.log(sum);
     return sum
 };
 
 
-const form = document.getElementById('submitButton');
-form.addEventListener('click', function onClick(event) {
-    submitForm();
+// const form = document.getElementById("submitButton");
+
+// form.addEventListener('click', function onClick(event) {
+//     submitForm();
+//     totalFees();
+// });
+document.getElementById("submitButton").addEventListener("click", function (event) {
+    submitForm(event);
     totalFees();
 });
 
-
 const checkbox = document.querySelector("#add");
 
-checkbox.addEventListener("click", checkboxClick, false);
+checkbox.addEventListener("click", checkbox, false);
+const checkboxes = document.querySelector("#submitButton");
 
-function checkboxClick(event) {
-    let warn = "preventDefault() won't let you check this!<br>";
-    document.getElementById("output-box").innerHTML += warn;
-    event.preventDefault();
-}
+checkboxes.addEventListener("click", checkboxes, false);
+
+// function checkboxClick(event) {
+//     let warn = "preventDefault() won't let you check this!<br>";
+//     document.getElementById("#summary").innerHTML += warn;
+//     event.preventDefault();
+// }
