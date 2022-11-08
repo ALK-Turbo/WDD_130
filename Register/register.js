@@ -74,7 +74,7 @@ function totalFees() {
 
     let sum = feeElements.reduce(function (previousValue, currentValue) {
         return previousValue + parseFloat(currentValue.value);
-    });
+    }, 0);
     // once you have your total make sure to return it!
     console.log(sum);
     return sum
