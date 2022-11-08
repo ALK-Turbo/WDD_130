@@ -71,8 +71,9 @@ function totalFees() {
     // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
     feeElements = [...feeElements];
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
+
     let sum = feeElements.reduce(function (previousValue, currentValue) {
-        return previousValue + currentValue;
+        return previousValue + parseFloat(currentValue.value);
     });
     // once you have your total make sure to return it!
     console.log(sum);
