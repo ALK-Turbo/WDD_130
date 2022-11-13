@@ -31,6 +31,7 @@
 main {
     font-family: var(--heading-font);
     max-width: 960px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
