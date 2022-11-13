@@ -8,11 +8,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="./apod.css">
     <script src="./apod.js" defer></script>
+
 </head>
+<main>
 
-<body>
-    <section id="output"></section>
+    <body>
+        <header>🪐Nasa Astronomy Picture of the Day (APOD)</header>
+        <section class="getDate">
+            <div class="Date">
+                <label for="date">Date </label>
+                <input id="date" type="date" name="date" value="" required="" data-inline="true">
+                <button type="submit" id="submitButton" class="button" data-inline="true">Get Image</button>
+            </div>
 
-</body>
+        </section>
+        <section class="Alert">
+            <p>Alert Message</p>
+        </section>
+        <section class="picOfTheDay">
+
+            <section id="output"></section>
+
+        </section>
+
+    </body>
+    <footer>
+        <a href="url">https://apod.nasa.gov/apod/astropix.html</a>
+    </footer>
+</main>
 
 </html>
