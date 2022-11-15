@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./theme.scss">
+    <script src="./theme.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>JS Theme Switcher</h1>
+            <nav class="topNav">
+                <ul class="topNav__links">
+                    <li class="topNav__links__link">
+                        <a href="#what">What?</a>
+                    </li>
+                    <li class="topNav__links__link">
+                        <a href="#how">How?</a>
+                    </li>
+                    <li class="topNav__links__link">
+                        <a href="#why">Why?</a>
+                    </li>
+                    <li class="topNav__links__link">
+                        <a href="#bonus">Bonus</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainContent">
+            <div class="hero">
+                <div class="imgWrapper">
+                    <img class="hero__image" src="https://unsplash.it/1600/900?random" />
+                </div>
+                <div class="overlay"></div>
+                <div class="hero__title">
+                    Because JS is where it's at.
+                </div>
+
+            </div>
+            <div class="switcher">
+                <h2>Ready to Switch Themes? Click away, my friend.</h2>
+                <div class="buttonContainer">
+                    <button class=" button theme1">Light Theme</button>
+                    <button class="button theme2">Dark Theme</button>
+                    <button class="button theme3">InvisiTheme</button>
+                </div>
+            </div>
+            <div class="content">
+                <section>
+                    <img class="floatedImage" src="https://unsplash.it/150?random">
+                    <h3 id="what">What?</h3>
+                    <p>The purpose of this CodePen is to show how you can use javascript and CSS to effect HTML and,
+                        therefore change the look or layout of a page. I wrote this in javascript without the use of any
+                        javascript libraries (no jQuery).</p>
+                </section>
+                <section>
+                    <img class="floatedImage" src="https://unsplash.it/151?random">
+                    <h3 id="how">How?</h3>
+                    <p>The basic concept is to create two (or more) sets of styles. One style is the default and uses
+                        dark
+                        texts on a light background. The second uses the opposite; light text on a dark background. I
+                        included two buttons that, when clicked, add or remove the additional class that will change the
+                        look of the page (theme).</p>
+                    <p>
+                    <pre>document.querySelector</pre> is used here to target the buttons we're after as well as the
+                    body.
+                    Once those are defined we use a combination of
+                    <pre>addEventListener</pre> and
+                    <pre>classList</pre> and then either
+                    <pre>add</pre> or
+                    <pre>remove</pre> to... add or remove the "dark" class from the class list of the body. Pretty
+                    simple.
+                    </p>
+                </section>
+                <section>
+                    <img class="floatedImage" src="https://unsplash.it/152?random">
+                    <h3 id="why">Why?</h3>
+                    <p>I created this pen because my son is learning Javascript and wanted to understand some of the
+                        ways
+                        you could actually tie scripts to your page for something useful. This is one of many ways you
+                        can
+                        do that. Hopefully others can learn from this as
+                        well.</p>
+                </section>
+                <section class="bonus" id="bonus">
+                    <img class="floatedImage" src="https://unsplash.it/149?random">
+                    <h3 class="bonus__header">Bonus Round: Replacing HTML text with input text</h3>
+                    <p>Type in the box below to replace the header above with the text you typed. I created a backup
+                        function that lets you hit the button to switch the text as well.</p>
+                    <input class="newText" placeholder="Oooh - Oooh! Pick me!" />
+                    <input type="submit" class="button submit" value="Switch It!" />
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
