@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="quote.js" type="module"></script>
+    <style>
+        :root {
+            --quote-color: blue;
+            --quote-width: 66ch;
+        }
+
+        .quote {
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+            max-width: var(--quote-width);
+        }
+
+        .quote span {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2em;
+            color: var(--quote-color);
+        }
+
+        .quote .author {
+            text-align: right;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .button {
+            background-color: #47bee6;
+            font-size: 16px;
+            border: solid 1px black;
+
+        }
+
+        .button:hover {
+            background-color: #47bee6;
+            color: white;
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <header><button class="button" id="getQuote">Get Random Quote</button></header>
+    <section id="quoteContainer"></section>
+</body>
+<footer> </footer>
+
+</html>
