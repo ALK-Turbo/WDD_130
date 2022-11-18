@@ -2,11 +2,17 @@ const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 async function getApod(url, callBack) {
     const response = await fetch(url);
+    const data = await res.json();
     if (response.ok) {
         const data = await response.json();
         console.log(data)
 
         callBack(data)
+    } else {
+        // error...output the message returned by the server
+
+        // return false to show that something went wrong
+
     }
 }
 
@@ -27,3 +33,8 @@ function doStuff(data) {
 
 // console.log(getApod(apodUrl, doStuff));
 getApod(apodUrl, doStuff)
+
+
+function getApodByDate{
+    apodUrl + `&date=${date.value}`
+}
