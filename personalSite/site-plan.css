@@ -209,3 +209,7 @@ nav a:hover {
     padding: 5px;
     border: 1px black solid;
 }
+
+#website_logo {
+    width: 200px;
+}
