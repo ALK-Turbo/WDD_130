@@ -1,0 +1,65 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #10475B;
+    --secondary-color: #A7C2AD;
+    --accent1-color: #CEB663;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: Lato, Helvetica, sans-serif;
+    ;
+
+    --paragraph-font: 'Courier New', Courier, monospace;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-background-color-on-color: var(--primary-color);
+    /* headlines on a colored background */
+    --headline-text-color-on-color: var(--accent1-color);
+
+    /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-text-color-on-color);
+    background-color: var(--headline--background-color-on-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* This are the Tabs. Some are linked and some are just to tab over to the next page.*/
+.link {
+    display: inline;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
