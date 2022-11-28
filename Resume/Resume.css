@@ -23,11 +23,17 @@
     --nav-hover-background-color: var(--primary-color);
 }
 
+main {
+    display: grid;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4em;
     font-size: 18px;
 
 }
@@ -37,17 +43,12 @@ img {
     margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--heading-font);
+header {
     color: var(--headline-text-color-on-color);
-    background-color: var(--headline--background-color-on-color);
+    background-color: var(--headline-background-color-on-color);
+    margin: 0;
+    width: 100vw;
 }
-
 
 
 
