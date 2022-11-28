@@ -31,8 +31,6 @@ Fonts are separated by a | */
     --nav-hover-background-color: var(--primary-color);
 }
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
 body {
     max-width: 1200px;
     margin: 0 auto;
