@@ -109,14 +109,23 @@ header h2 {
 /* Some are linked 
 and some are just to tab 
 over to the next page.*/
-.tabs {
+button {
+    color: black;
+    background-color: white;
+    border: 0;
+
     display: inline;
     font-size: 3vw;
-    margin: 3vw;
+    margin: 2vw;
     text-align: center;
 
 }
 
+button:hover {
+    border-bottom: 4px var(--accent1-color) solid;
+    background-color: #ddd;
+    border-radius: 0.5em;
+}
 
 footer {
     text-align: center;
