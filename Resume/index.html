@@ -22,12 +22,30 @@
 
 
         <ul class="tabs-menu">
-            <button class="tabs">ABOUT ME</button>
-            <button class="tabs">RESUME</button>
-            <button class="tabs">PORTFOLIO</button>
-            <button class="tabs">GENERATOR</button>
+            <button class="tablinks" onclick="openTab(event, 'About Me')" id="defaultOpen">ABOUT ME</button>
+            <button class="tablinks" onclick="openTab(event, 'Resume')">RESUME</button>
+
+            <a href="./index_PortFolio.html">
+                <button class="tablinks" id="ChildLinks">PORTFOLIO</button>
+            </a>
+
+            <a href="./index_Generator.html">
+                <button class="tablinks" id="ChildLinks">GENERATOR</button>
+            </a>
         </ul>
 
+        <!-- Tab content -->
+        <div id="About Me" class="tabcontent">
+            <h3>About Me</h3>
+            <p>This is a little abotu me.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="Resume" class="tabcontent">
+            <h3>Resume</h3>
+            <p>I have some education and work experience.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
 
         <footer>
             <p>Test, footer.</p>
