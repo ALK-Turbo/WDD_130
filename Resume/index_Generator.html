@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="./Resume.js" defer></script>
+    <link rel="stylesheet" href="./Resume.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./Ammon logo.ico">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./Ammon logo.png" alt="My Logo">
+            <h1> AMMON LEO KELLER</h1>
+            <h2>DIGITAL PORTFOLIO</h2>
+        </header>
+
+
+
+        <ul class="tabs-menu">
+            <a href="./index.html">
+                <button class="tablinks" onclick="openTab(event, 'About Me')" id="defaultOpen">ABOUT ME</button>
+            </a>
+
+            <a href="./index.html">
+                <button class="tablinks" onclick="openTab(event, 'Resume')">RESUME</button>
+            </a>
+
+            <a href="./index_PortFolio.html">
+                <button class="tablinks" id="ChildLinks">PORTFOLIO</button>
+            </a>
+
+            <a href="./index_Generator.html">
+                <button class="tablinks" id="ChildLinks">GENERATOR</button>
+            </a>
+        </ul>
+
+        <!-- Tab content -->
+        <div id="About Me" class="tabcontent">
+            <h3>About Me</h3>
+            <p>This is a little abotu me.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="Resume" class="tabcontent">
+            <h3>Resume</h3>
+            <p>I have some education and work experience.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <footer>
+            <p>Test, footer.</p>
+
+        </footer>
+    </main>
+</body>
+
+</html>
