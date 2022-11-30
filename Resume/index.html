@@ -23,10 +23,11 @@
 
         <ul class="tabs-menu">
             <button class="tablinks" onclick="openTab(event, 'About Me')" id="defaultOpen">ABOUT ME</button>
+
             <button class="tablinks" onclick="openTab(event, 'Resume')">RESUME</button>
 
             <a href="./index_PortFolio.html">
-                <button class="tablinks" id="ChildLinks">PORTFOLIO</button>
+                <button class="tablinks" onclick="openTab(event, 'Portfolio')" id="ChildLinks">PORTFOLIO</button>
             </a>
 
             <a href="./index_Generator.html">
@@ -47,6 +48,17 @@
             <span onclick="this.parentElement.style.display='none'">x</span>
         </div>
 
+        <div id="Portfolio" class="tabcontent">
+            <h3>Portfolio</h3>
+            <p>I've done a few projects...</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="Generator" class="tabcontent">
+            <h3>Generator</h3>
+            <p>This is a Yoda translator.</p>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
         <footer>
             <p>Test, footer.</p>
 
