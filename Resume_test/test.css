@@ -287,3 +287,26 @@ of the Resume */
 
 /* This is for the Portfolio Page! */
 /*Start here when you get back*/
+#nav-Portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+.Portfolio_Content {
+    display: flex;
+    width: 1000px;
+    height: 850px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Portfolio_Content .Portfolio_links {
+    padding: 1em;
+    width: auto;
+    height: auto;
+}
+
+.Portfolio_Content .pdf_viewer {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
