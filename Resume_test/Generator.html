@@ -25,7 +25,6 @@
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link" id="nav-Resume-tab" href="navigate-modify.html?tab=1">About Me</a>
             <a class="nav-item nav-link" id="nav-Resume-tab" href="navigate-modify.html?tab=2">Resume</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" href="navigate-modify.html?tab=3">Contact</a>
             <a class="nav-item nav-link" id="nav-Portfolio-tab" href="./Portfolio.html">Portfolio</a>
             <a class="nav-item nav-link active" id="nav-Generator-tab" href="./Generator.html">Generator</a>
         </div>
@@ -36,7 +35,6 @@
             tab
         </div>
         <div class="tab-pane fade" id="nav-Resume" role="tabpanel" aria-labelledby="nav-Resume-tab">2nd tab</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3rd tab</div>
         <div class="tab-pane fade" id="nav-Portfolio" role="tabpanel" aria-labelledby="nav-Portfolio-tab">
             4th tab</div>
         <!-- Input everything for the Generator Page here -->
@@ -61,9 +59,6 @@
                     break;
                 case '2':
                     $('[href="#nav-Resume"]').tab('show');
-                    break;
-                case '3':
-                    $('[href="#nav-contact"]').tab('show');
                     break;
                 case '4':
                     $('[href="#nav-Portfolio"]').tab('show');

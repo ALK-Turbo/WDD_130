@@ -42,6 +42,7 @@
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     color: black;
+    background-color: transparent;
 }
 
 .nav-link.disabled {
@@ -50,10 +51,16 @@
 
 /* Grabs the shown tab and overrides previous input */
 .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link .active .show {
     color: rgb(148, 148, 4);
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff
+    background-color: transparent;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+#nav-About-Me-tab {
+    background-color: transparent;
+
 }
 
 h1,
@@ -116,7 +123,7 @@ header h2 {
     /* border: 1px solid black; */
     max-width: 1000px;
     width: 100vw;
-    margin: auto;
+    margin: 2em auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }
@@ -277,3 +284,6 @@ of the Resume */
     grid-row: 2/3;
     width: 450px;
 }
+
+/* This is for the Portfolio Page! */
+/*Start here when you get back*/
