@@ -1,0 +1,72 @@
+<!--second page:- navigate-modify.html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tab Navigation</title>
+    <link rel="stylesheet" href="./maxcdb.css">
+    <link rel="stylesheet" href="./test.css">
+    <script src="./jquery.js"></script>
+    <script src="cloudfare.js"></script>
+    <script src="./maxcdn.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-item nav-link active" id="nav-About-Me-tab" data-toggle="tab" href="#nav-About-Me"
+                role="tab" aria-controls="nav-About-Me" aria-selected="true">About Me</button>
+            <button class="nav-item nav-link" id="nav-Resume-tab" data-toggle="tab" href="#nav-Resume" role="tab"
+                aria-controls="nav-Resume" aria-selected="false">Resume</button>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">Contact</a>
+            <a class="nav-item nav-link" id="nav-Portfolio-tab" href="./Portfolio.html" aria-controls="nav-Portfolio"
+                aria-selected="false">Portfolio</a>
+            <a class="nav-item nav-link" id="nav-Generator-tab" href="./Generator.html" aria-controls="nav-Generator"
+                aria-selected="false">Generator</a>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-About-Me" role="tabpanel" aria-labelledby="nav-About-Me-tab">1st
+            tab
+        </div>
+        <div class="tab-pane fade" id="nav-Resume" role="tabpanel" aria-labelledby="nav-Resume-tab">2nd tab</div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3rd tab</div>
+        <div class="tab-pane fade" id="nav-Portfolio" role="tabpanel" aria-labelledby="nav-Portfolio-tab">4th tab</div>
+        <div class="tab-pane fade" id="nav-Generator" role="tabpanel" aria-labelledby="nav-Generator-tab">5th tab</div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var whichTab = getUrlVars();
+            function getUrlVars() {
+                var hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                }
+                return hash[1];
+            }
+            switch (whichTab) {
+                case '1':
+                    $('[href="#nav-About-Me"]').tab('show');
+                    break;
+                case '2':
+                    $('[href="#nav-Resume"]').tab('show');
+                    break;
+                case '3':
+                    $('[href="#nav-contact"]').tab('show');
+                    break;
+                case '4':
+                    $('[href="#nav-Portfolio"]').tab('show');
+                    break;
+                case '4':
+                    $('[href="#nav-Generator"]').tab('show');
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>
