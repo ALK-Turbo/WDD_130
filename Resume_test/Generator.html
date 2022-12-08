@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Quote Generator</title>
     <link rel="stylesheet" href="./maxcdb.css">
     <link rel="stylesheet" href="./test.css">
     <script src="./jquery.js"></script>
     <script src="cloudfare.js"></script>
     <script src="./maxcdn.js"></script>
+    <script src="./quote_generator.js" defer></script>
 </head>
 
 <body>
@@ -39,7 +40,28 @@
             4th tab</div>
         <!-- Input everything for the Generator Page here -->
         <div class="tab-pane fade show active" id="nav-Generator" role="tabpanel" aria-labelledby="nav-Generator-tab">
-            5th tab</div>
+
+            <!-- Quote Container -->
+            <div class="container">
+                <!-- Quote to be Displayed Here -->
+                <h1>
+                    <i class="fas fa-quote-left"></i>
+                    <span class="quote" id="quote"></span>
+                    <i class="fas fa-quote-right"></i>
+                </h1>
+                <!-- Author to be Displayed Here -->
+                <p class="author" id="author"></p>
+
+                <hr />
+                <div class="buttons">
+
+                    <!--Add an onclick event on 'next quote' button. Upon the click of a button, a new random quote is generated-->
+                    <button class="next" id="next_quote">Next quote</button>
+                </div>
+            </div>
+
+            </button>
+        </div>
     </div>
 
     <script>
