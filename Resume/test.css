@@ -145,8 +145,8 @@ header h2 {
 
 .about-me-info {
     font-family: var(--Job-Details-Font-Size);
-    font-size: 2vw;
-    padding-top: 3em;
+    font-size: 1.5vw;
+    padding-top: 1em;
     padding-bottom: 3em;
     padding-left: 10vw;
 }
