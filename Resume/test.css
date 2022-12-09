@@ -116,6 +116,11 @@ header h2 {
     font-size: 1vw;
 }
 
+footer img {
+    justify-content: center;
+    width: 40px;
+}
+
 /* All of the following is for the About Me Page */
 
 
@@ -145,7 +150,9 @@ header h2 {
 
 .about-me-info {
     font-family: var(--Job-Details-Font-Size);
-    font-size: 1.5vw;
+    font-size: 16px;
+    line-height: 1.75;
+
     padding-top: 1em;
     padding-bottom: 3em;
     padding-left: 10vw;
@@ -153,6 +160,7 @@ header h2 {
 
 .about-me img {
     width: 25vw;
+    max-width: 380px;
     aspect-ratio: 4/6;
     padding: 1em;
 }
